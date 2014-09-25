@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="ja">
+<head>
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+  <title>情報処理実習F: 第４回　Webサイト公開の手順</title>
+  <META NAME="author" LANG="ja" CONTENT="Katsutoshi Seki">
+  <LINK REL="stylesheet" TYPE="text/css" HREF="../seki.css">
+</head>
+
+<body>
+
+<div class="breadcrumb">
+<strong>このページの位置: </strong><a href="../index.html">関 勝寿</a> : 担当講義科目 > <a href="index.html">情報処理実習F</a> > 第４回　Webサイト公開の手順
+</div>
+
+
+<h1>情報処理実習F: 第４回　Webサイト公開の手順</h1>
+
+<h2>前回の復習</h2>
+
+<ul>
+<li>見出しを構成するタグは？
+<li>太字、斜体、文字の大きさを変えるタグは？
+<li>リスト書きをするタグは？
+</ul>
+
+<h2>Webサイト公開の手順</h2>
+
+<p>手元のパソコンを<strong>ローカル</strong>、Webサーバーを<strong>ホスト</strong>と呼ぶ。ローカルで編集したWebページを、ホストにアップロードすることで、Webページが公開される。ローカルからホストへのファイル転送には通常<acronym title="File Transfer Protocol">FTP</acronym>というプロトコルが用いられる。以下のような手順となる。</p>
+
+<ol>
+<li>ローカルでWebページを作成、更新する。</li>
+<li>ローカルのWebページをブラウザで確認する。</li>
+<li>ローカルのWebページをFTPでホストにアップロードする。</li>
+<li>ホストにアップロードされたWebページをブラウザで確認する。</li>
+</ol>
+
+<p align="center">
+<img src="publish.jpg" width="526" height="469" alt="図: Webページの作成、公開と閲覧">
+</p>
+
+<h2>FTPによるWebサーバーへの転送</h2>
+
+<ol>
+<li>FTPソフト <a href="http://www2.biglobe.ne.jp/~sota/ffftp.html">FFFTP</a> を起動する。</li>
+<li>授業用のWebサーバーにFTPで接続する。FFFTPの使い方は <a href="http://ffftp.be/manual.shtml">初心者マニュアル</a> を参照する。設定の詳細は授業で説明する。</li>
+<li>ローカルの初期フォルダをマイドキュメントの HomePage フォルダに設定する。</li>
+<li>ホストの初期フォルダを public_html に設定する。</li>
+<li>public_html フォルダ（ディレクトリ）を作成する。Webに公開するファイルは、この public_html の中に保存する。</li>
+<li>public_html フォルダ（ディレクトリ）の中に入る。</li>
+<li>ローカルからホストへ index.html ファイルを転送する。</li>
+<li><a href="meibo">名簿</a>のリンクからWebページが閲覧できることを確認する。</li>
+<li>トップページには、public_html ディレクトリの下の index.html ファイルが表示される。</li>
+</ol>
+
+<h2>プロバイダやホームページスペースサービスを使う場合</h2>
+
+<ul>
+<li>授業用Webサーバー上のページは、東洋大学内からのみ閲覧可能である。また、授業用Webサーバーは、本年度2月一杯でデータが消去される。授業で学習した内容を元に、自らホームページを公開する場合には、以下に述べる方法でホームページスペースサービスを利用して公開してください。
+<li>自宅でインターネットサービスプロバイダからインターネットに接続している場合は、プロバイダがホームページスペースを提供している場合が多いので、それを利用可能である。
+<li>また、数多くのホームページスペースサービスがある。無料のものも多い。
+<li>そういったホームページスペースサービスでは、通常FTPを使ってサーバーにWebページを転送する。
+<li>たとえば<a href="http://geocities.yahoo.co.jp/">Yahoo! ジオシティーズ</a>の場合は、<a href="http://help.yahoo.co.jp/help/jp/geo/transfer/transfer-02.html">FTPの設定について</a>、<a href="http://help.yahoo.co.jp/help/jp/geo/transfer/transfer-26.html">FTP設定について (FFFTP)</a>といったページに、FTP設定に関する説明が掲載されている。</li>
+<li>ホームページスペースサービスによって、使用可能なサーバー容量、CGI等の使える機能に差があるため、目的に応じて適したサービスを選択する。</li>
+</ul>
+
+<h2>FTPとセキュリティ</h2>
+
+<ul>
+<li>FTPは、通信内容を暗号化しないプロトコルなので、クライアントとサーバーの間の通信経路でパスワードを盗聴される危険性がある。</li>
+<li>可能であれば、<a href="http://ja.wikipedia.org/wiki/SFTP">SFTP</a>, <a href="http://ja.wikipedia.org/wiki/FTPS">FTPS</a>, <a href="http://ja.wikipedia.org/wiki/Secure_copy">SCP</a>等の通信を暗号化するプロトコルを使うことが望ましい。</li>
+<li>暗号化されたプロトコルを用いるためには、サーバーがそのプロトコルに対応している必要がある。プロバイダ選びの際に参考にすると良い。</li>
+<li>ウィルスに感染すると、FTPアカウント情報が盗まれて、ウェブサイトが改竄されることがある。ウィルスに感染しないように、注意する必要がある。</li>
+<li>参考：<a href="http://internet.watch.impress.co.jp/docs/news/20091225_339670.html">「Gumblar」の攻撃が増加・長期化、サイト管理者は細心の注意を</a> (Internet Watch, 2009/12/25)</li>
+</ul>
+
+<h2>Mac を使う場合</h2>
+
+<p>
+Mac を使ってWebページを作成する場合も、テキストエディタでHTMLファイルを作成し、FTPソフトでアップロードする。私の場合は、テキストエディタに<a href="http://www.aynimac.com/p_blog/files/article.php?id=41">CotEditor</a>、FTPソフトに<a href="http://cyberduck.ch/">Cyberduck</a>を使っている。Cyberduckでは、サーバー上のファイルを直接エディタで開いて編集できるので便利である。
+</p>
+<p>なお、Cyberduckは sftp, WebDAV にも対応している。</p>
+
+<h2>文字実体参照</h2>
+
+<p>
+HTML文書中に<strong>&lt;h1&gt;</strong>といった文字を書きたい時にはどうすればいいでしょうか？そのまま書いてしまうと、タグと認識されてしまいます。そこで、<strong>&amp;lt;h1&amp;gt;</strong>と書くと<strong>&lt;h1&gt;</strong>と表示されます。ここで、&amp;lt;は&lt;を表示し、&amp;gt;は&gt;を表示する文字実態参照です。
+文字実体参照あるいは数値文字参照を使うと、&lt; &gt; &amp; &quot; &pound; &euro; &copy; &trade; &frac12; &aacute; &alpha; &beta; &gamma; &ge; &hearts; &#12320; &#9728; &#9832; といった様々な記号を表示することができます。
+</p>
+
+<ul>
+<li><a href="http://www.asahi-net.or.jp/~AX2S-KMTN/ref/cref_ent.html">文字実体参照</a></li>
+<li><a href="http://f24.aaa.livedoor.jp/~nikolist/com/char.html">特殊文字（文字参照）一覧</a></li>
+</ul>
+
+
+<h2>課題</h2>
+
+<ul>
+<li>先週作ったファイルを、授業用ウェブサイトからアップロードしてください。</li>
+<li><a href="meibo">名簿</a>のリンクからWebページが閲覧できることを確認してください。</li>
+<li>十分に理解できていない場合には、よく復習して、最初からやり直してみてください。</li>
+<li>分からなければ質問をしてください。</li>
+</ul>
+
+<hr>
+<p><a href="index.html">情報処理実習F</a></p>
+
+<div class="copyright">
+<script type="text/javascript">
+<!--
+document.writeln("最新更新日: " + document.lastModified + "<br>");
+today=new Date();
+document.writeln("Copyright (C) 2009-"+today.getFullYear()+" Katsutoshi Seki. All Rights Reserved.");
+//-->
+</script>
+</div>
+
+<!-- Google Analytics starts -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6089562-1");
+pageTracker._trackPageview();
+</script>
+<!-- Google Analytics ends -->
+
+</body>
+</html>

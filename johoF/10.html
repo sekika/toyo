@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="ja">
+<head>
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+  <title>情報処理実習F: 第10回　XHTMLベーシック（携帯電話対応ページ作成） </title>
+  <META NAME="author" LANG="ja" CONTENT="Katsutoshi Seki">
+  <LINK REL="stylesheet" TYPE="text/css" HREF="../seki.css">
+</head>
+
+<body>
+
+<div class="breadcrumb">
+<strong>このページの位置: </strong><a href="../index.html">関 勝寿</a> : 担当講義科目 > <a href="index.html">情報処理実習F</a> > 第10回　XHTMLベーシック（携帯電話対応ページ作成）</div>
+
+<h1>第10回　XHTMLベーシック（携帯電話対応ページ作成）</h1>
+
+<h2>小型情報機器のためのXHTMLベーシック</h2>
+
+<ul>
+<li><a href="http://www.doraneko.org/webauth/xhtmlbasic/20001219/Overview.html">XHTML&trade;ベーシック (W3C勧告 2000年12月19日)</a>を学ぶ。</li>
+<li>作成例: <a href="http://seki.jpn.org/m/">気まぐれモバイル</a></li>
+<li>携帯を持っている人は、携帯から http://seki.jpn.org にアクセスしてみてください。</li>
+<li>ソースを見る。これまでに学んで来たHTMLとは異なり、<a href="http://www.kanzaki.com/docs/html/xhtml1.html">XHTML</a>であるため、特に以下の点に留意する。
+<ul>
+<li>全てのタグ（要素タイプ名、属性名）は小文字で記述する。</li>
+<li>属性の値は必ず引用符で囲む。</li>
+<li>終了タグを省略しない。</li>
+<li>空要素のタグは /&gt;で閉じる。</li>
+<li>&amp;はあらゆるところで&amp;amp;と記述する。</li>
+</ul>
+</li>
+</ul>
+
+<h2>各携帯キャリアへの対応</h2>
+
+<p><a href="http://hokagu.blog45.fc2.com/blog-category-6.html">携帯サイトを簡単に作るコツ</a>によれば、モバイル向けのサイトを作るためには以下のようにすると良い。</p>
+
+<ul>
+<li>文字コードはUTF-8 (Shift-JISでも問題ない)。</li>
+<li>マークアップ言語はXHTML Basic。</li>
+<li>画像はJPEGかGIF。</li>
+<li>CSSはインラインで書く。</li>
+<li>ページサイズはXHTML9KB以内、画像含めてで100KB以内。</li>
+</ul>
+
+<h2>表示確認</h2>
+
+<ul>
+<li><a href="http://codezine.jp/article/detail/1352">携帯シミュレータ</a>を使うと、各種携帯端末でどのように表示されるか確認することができる。</li>
+<li>とりあえず、ウィンドウサイズを小さくすることでだいたいの雰囲気を知ることができる。</li>
+<li>基本的には、XHTMLベーシックの文法に正しく則ってページを作成すれば正しく表示されるはずである。したがって、<a href="http://validator.w3.org/">W3C Makup Validation Service</a>で文法チェックをするのが良いであろう。</li>
+</ul>
+
+<h2>課題</h2>
+
+<ul>
+<li>携帯向けページを作成して、トップページからリンクして下さい。</li>
+<li><a href="http://validator.w3.org/">W3C Makup Validation Service</a>で文法チェックをして、エラーがなくなるまで文法ミスを直して下さい。</li>
+<li>作成したページを授業用ウェブサーバーにFTPでアップロードして、<a href="meibo">名簿</a>のリンクから更新されたことを確認してください。 </li>
+</ul>
+
+<hr>
+<p><a href="index.html">情報処理実習F</a></p>
+
+<div class="copyright">
+<script type="text/javascript">
+<!--
+document.writeln("最新更新日: " + document.lastModified + "<br>");
+today=new Date();
+document.writeln("Copyright (C) 2009-"+today.getFullYear()+" Katsutoshi Seki. All Rights Reserved.");
+//-->
+</script>
+</div>
+
+<!-- Google Analytics starts -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6089562-1");
+pageTracker._trackPageview();
+</script>
+<!-- Google Analytics ends -->
+
+</body>
+</html>

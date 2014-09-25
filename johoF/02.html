@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="ja">
+<head>
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+  <title>情報処理実習F: 第2回　WWWの歴史と仕組み </title>
+  <META NAME="author" LANG="ja" CONTENT="Katsutoshi Seki">
+  <LINK REL="stylesheet" TYPE="text/css" HREF="../seki.css">
+</head>
+
+<body>
+
+<div class="breadcrumb">
+<strong>このページの位置: </strong><a href="../index.html">関 勝寿</a> : 担当講義科目 > <a href="index.html">情報処理実習F</a> > 第2回　WWWの歴史と仕組み
+</div>
+
+
+<h1>情報処理実習F: 第2回　WWWの歴史と仕組み</h1>
+
+<h2>前回の復習</h2>
+
+<ul>
+<li>前回の授業を欠席した人は、<a href="index.html">講義情報</a>と<a href="01.html">イントロダクション</a>をよく読んでおくこと。
+<!-- li>アンケート結果：授業の内容に対する期待としては、パソコンの知識や技術を向上させたい、ホームページ作成について学びたい、という意見が多かった。専門用語が難しいので分かりやすい解説をしてほしい、という意見があった。「内容の濃い授業を希望する」という意見もあった。
+<li>アンケート結果をふまえ、初心者にも分かりやすい授業、Web作成の基礎が身に付く授業、そして高度な内容にも可能な限り踏み込む授業を目指します。
+<li>専門用語はなるべく解説をしていきますが、分かりにくいところがあれば質問してください。 -->
+</ul>
+
+<h2>WWWの歴史と仕組み</h2>
+
+<p>以下のWebサイトを参考に、WWWの歴史と仕組みを理解しよう。</p>
+
+<ul>
+<li><a href="http://ja.wikipedia.org/wiki/World_Wide_Web ">Wikipedia: World Wide Web</a></li>
+<li><a href="http://www.brl.ntt.co.jp/people/takada/docs/www-intro/ ">World-Wide Web (NTT基礎研究所高田氏の説明資料)</a></li>
+<li><a href="http://www.tohoho-web.com/wwwxx018.htm">WWWの歴史</a></li>
+</ul>
+
+<h2>HTTPのしくみ</h2>
+
+<ol>
+<li>スタート→プログラム→アクセサリ→コマンドプロンプトを起動する。
+<li>「telnet  www2.toyo.ac.jp  80」と入力してリターンキーを押す。
+<li>画面には何も表示されないが、「GET  /~seki_k/johoF/sample.html」と入力してリターンキーを押す。
+<li>何が表示されましたか？
+</ol>
+
+<h2>準備</h2>
+
+<ul>
+<li>拡張子を表示する。エクスプローラの「ツール」「フォルダオプション」メニューを開いて、「表示」タブの中の「登録されている（ファイルの）拡張子は表示しない」をオフにして「OK」ボタンを押す。 </li>
+<li>マイドキュメントの下に HomePage フォルダを作成する。このフォルダの中に、Webページを作成する。</li>
+<li>マイドキュメントフォルダは、ネットワーク上の各自ログインアカウントごとに割り当てられているフォルダで、東洋大学PC教室内のどのパソコンからも、ログインすれば同じマイドキュメントフォルダにアクセスできる。</li>
+<li>なお、パソコン上に作成したWebページをサーバーにアップロードして公開する方法については、<a href="04.html">第4回</a>で学習する。</li>
+</ul>
+
+<h2>HTMLファイルの作成</h2>
+
+<ol>
+<li><a href="sample.html">サンプルページ</a>を HomePage フォルダにダウンロードする。
+<li>ファイル名を index.html に変える。拡張子は、htmではなくてhtmlなので注意すること。
+<li>テキストエディタ（メモ帳または秀丸エディタ）で index.html を編集する。「サンプル」と書かれているところ（２箇所ある）を、自分の名前に変える。
+<li>Web ブラウザ（Internet Explorer または Mozilla Firefox) で index.html を開く。
+<li>自分の名前が表示されていることを確認する。</li>
+</ol>
+
+
+<h2>課題</h2>
+
+<ul>
+<li>「HTMLファイルの作成」で作成したWebページの「これがホームページです。」という部分を書き換えて、今日の授業の感想を書いてください。</li>
+<li>ウェブブラウザで確認して下さい。</li>
+<li>出来たホームページを、ウェブブラウザから印刷して提出して下さい。</li>
+</ul>
+
+<hr>
+<p><a href="index.html">情報処理実習F</a></p>
+
+<div class="copyright">
+<script type="text/javascript">
+<!--
+document.writeln("最新更新日: " + document.lastModified + "<br>");
+today=new Date();
+document.writeln("Copyright (C) 2009-"+today.getFullYear()+" Katsutoshi Seki. All Rights Reserved.");
+//-->
+</script>
+</div>
+
+<!-- Google Analytics starts -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6089562-1");
+pageTracker._trackPageview();
+</script>
+<!-- Google Analytics ends -->
+
+</body>
+</html>

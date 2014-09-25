@@ -1,0 +1,321 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="ja">
+<head>
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+  <title>ネットワークと情報セキュリティ</title>
+  <META NAME="author" LANG="ja" CONTENT="Katsutoshi Seki">
+  <LINK REL="stylesheet" TYPE="text/css" HREF="../seki.css">
+  <meta property="og:url" content="http://www2.toyo.ac.jp/~seki_k/security/">
+  <meta property="og:title" content="ネットワークと情報セキュリティ">
+  <meta property="og:type" content="book">
+  <meta property="og:description" content="ネットワークと情報セキュリティについて、基本的な話題を中心に、若干専門的な内容にも踏み込みながら解説するPDF読本です。">
+  <meta property="fb:admins" content="katsutoshi.seki">
+  <meta property="og:image" content="http://www2.toyo.ac.jp/~seki_k/security/security.jpg">
+</head>
+
+<body>
+
+<div class="breadcrumb">
+<strong>このページの位置: </strong><a href="../index.html">関 勝寿</a>：テキスト > ネットワークと情報セキュリティ</div>
+
+<h1>ネットワークと情報セキュリティ</h1>
+
+<table border="0">
+<tr>
+<td width="320">
+<img src="security.jpg" alt="本の表紙" width="307" height="427" border="0">
+<td>
+
+<ul>
+<li>著者：<a href="../index.html">関 勝寿</a></li>
+<li>2012年5月10日 初版発行</li>
+</ul>
+
+<h2>「まえがき」より</h2>
+
+<p>
+コンピュータシステムへの不正アクセスやフィッシング詐欺など、情報ネットワークの仕組みを悪用した事件が相次いでいる。また、各種の情報漏洩事件に見られるように、情報セキュリティ管理が適切になされていない環境下では、悪意を持たない人であっても知らないうちに他人に迷惑をかけることになりかねない。このような被害を未然に防ぐために、自宅や会社で日常的にネットワークに接続された情報機器を利用する私たちにとって、必要とされる情報技術の知識（ITリテラシー）は水準が高くなっている。しかし、情報の専門家でなければ、そのような知識を体系的に学ぶ機会は少ない。
+</p>
+<p>
+本書では、ネットワークおよび情報セキュリティに関する知識について、情報化社会を安全に生きるために、一般の人が知っておくと役に立つ話題を中心に、若干専門的な内容にも踏み込みながら解説する。
+</p>
+
+<h2>ダウンロード</h2>
+
+<!-- a href="http://www.ipad-zine.com/b/1629/">ダウンロード (iPadZine)</a> 「直接ファイルを開く」< -->
+
+<ul>
+<li><a href="security.pdf"><img src="pdficon_large.png" alt="[PDF]" width="32" height="32"> <font size="+3">本書をダウンロードする (PDFファイル)</font></a></li>
+<li><a href="https://docs.google.com/viewer?url=http://www2.toyo.ac.jp/~seki_k/security/security.pdf&amp;hl=ja">Google Docs でプレビュー</a></li>
+<li><a href="http://www.amazon.co.jp/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%A8%E6%83%85%E5%A0%B1%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3-ebook/dp/B00ADA0MC8">Kindle で読む (Kindle ストア)</li>
+<li><a href="http://www.ipad-zine.com/b/1629/">iPad で読む (iPadZine)</a></li>
+</ul>
+
+</tr>
+</table>
+
+<h2>参考サイト</h2>
+
+<p>
+本書中で参照しているサイトと参照されていないサイトがあります。
+</p>
+
+<ul>
+<li><a href="#0">情報セキュリティ全般</a></li>
+<li><a href="#1">1. 情報倫理と情報セキュリティ</a></li>
+<li><a href="#2">2. ネットワークの基本的なしくみ</a></li>
+<li><a href="#3">3. ネットワークサービス</a></li>
+<li><a href="#4">4. 情報セキュリティ対策</a></li>
+<li><a href="#ex">章末問題</a></li>
+</ul>
+
+<h3><a name="0">情報セキュリティ全般</a></h3>
+
+<ul>
+<li><a href="http://www.jpcert.or.jp/">JPCERT コーディネーションセンター</a></li>
+<li><a href="http://www.ipa.go.jp/security/index.html">情報処理推進機構(IPA): 情報セキュリティ</a></li>
+<li><a href="http://www.soumu.go.jp/main_sosiki/joho_tsusin/security/index.htm">国民のための情報セキュリティサイト</a> (総務省)</li>
+<li><a href="http://jvn.jp/">Japan Vulnerability Notes (JVN)</a></li>
+<li><a href="http://www.npa.go.jp/cyberpolice/">警察庁 セキュリティポータルサイト @police</a></li>
+<li><a href="http://www.npa.go.jp/cyber/">警察庁 サイバー犯罪対策</a></li>
+<li><a href="https://www.ccc.go.jp/">サイバークリーンセンター (CCC)</a></li>
+<li><a href="http://www.st.ryukoku.ac.jp/~kjm/security/memo/">セキュリティホールmemo</a></li>
+<li><a href="http://maruyama-mitsuhiko.cocolog-nifty.com/">まるちゃんの情報セキュリティ気まぐれ日記</a></li>
+<li><a href="http://itpro.nikkeibp.co.jp/article/COLUMN/20060214/229302/">情報セキュリティ入門</a> (ITpro, 2006/2/22)</li>
+
+</ul>
+
+<h3><a name="1">1. 情報倫理と情報セキュリティ</a></h3>
+
+<ul>
+<li><a href="http://web.archive.org/web/20100430230507/http://www.so-net.ne.jp/security/news/newstopics_201004.html">ネットで増える「名誉棄損」 ～ 相次ぐ逮捕、最高裁有罪判決も</a> (So-net セキュリティ通信)</li>
+<li><a href="http://www.courts.go.jp/search/jhsp0030?hanreiid=38704&hanreiKbn=02">名誉毀損被告事件 平成21(あ)360</a> (判例検索システム, 最高裁判所第一小法廷, 2010/3/15)</li>
+<li><a href="http://www.j-cast.com/2013/05/09174764.html">食べログ「まずい」クチコミに店激怒　「客減った！弁償しろ」裁判はどうなる</a> (J-CASTニュース, 2013/5/9)</li>
+<li><a href="http://law.e-gov.go.jp/htmldata/S45/S45HO048.html">著作権法</a> (昭和45年5月6日法律第48号)</li>
+<li><a href="http://law.e-gov.go.jp/htmldata/H11/H11HO128.html">不正アクセス行為の禁止等に関する法律</a> (平成11年8月13日法律128号)</li>
+<li><a href="http://www.npa.go.jp/cyber/legislation/gaiyou/gaiyou.htm">不正アクセス行為の禁止等に関する法律の概要</a> (警察庁)</li>
+<li><a href="http://www.npa.go.jp/cyber/legislation/pdf/6_QA.pdf">不正アクセス禁止法改正Q&A (PDF)</a> (警察庁)</li>
+<li><a href="http://www.ofours.com/books/48/contents/archives/999948/">他人のＩＤなど公開の１６歳逮捕…提供罪初適用</a> (読売新聞, 2012/6/13)</li>
+<li><a href="http://www.ipa.go.jp/security/txt/2012/07outline.html">コンピュータウイルス・不正アクセスの届出状況[6月分および上半期]について</a> (IPA, 2012/7/4)</li>
+<li><a href="http://takagi-hiromitsu.jp/diary/20120527.html">流出パスワードの紹介は改正不正アクセス禁止法第5条に注意</a> (高木浩光, 2012/5/27)</li>
+<li><a href="http://www.moj.go.jp/keiji1/keiji12_00025.html">情報処理の高度化等に対処するための刑法等の一部を改正する法律案</a> (2011年公布)</li>
+<li><a href="http://ja.wikipedia.org/wiki/%E4%B8%8D%E6%AD%A3%E6%8C%87%E4%BB%A4%E9%9B%BB%E7%A3%81%E7%9A%84%E8%A8%98%E9%8C%B2%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E7%BD%AA">不正指令電磁的記録に関する罪</a> (Wikipedia)</li>
+<li><a href="http://blogs.yahoo.co.jp/aratanitt1/62831138.html">ウイルス作成容疑で初摘発＝２８歳無職男を逮捕－大阪府警</a> (時事, 2012/1/26)</li>
+<li><a href="http://bakera.jp/ebi/topic/4699">CSRFで逮捕者が出たらしい話</a> (水無月ばけら, 2012/2/7)</li>
+<li><a href="http://sankei.jp.msn.com/west/west_affairs/news/120513/waf12051312000005-n1.htm">「ウイルス作成罪」初適用　大阪府警の“大勝負”</a> (MSN産経, 2012/5/13)</li>
+<li><a href="http://www.mofa.go.jp/mofaj/gaiko/treaty/treaty159_4.html">サイバー犯罪に関する条約 （略称：サイバー犯罪条約）</a> (2001年採択)</li>
+<li><a href="http://www.keishicho.metro.tokyo.jp/haiteku/haiteku/haiteku406.htm">フィッシング110番</a> (警視庁)</li>
+<li><a href="http://ja.wikipedia.org/wiki/%E5%80%8B%E4%BA%BA%E6%83%85%E5%A0%B1%E6%BC%8F%E6%B4%A9">個人情報漏洩</a> (Wikipedia)</li>
+</ul>
+
+<h3><a name="2">2. ネットワークの基本的なしくみ</a></h3>
+
+<h4>2-1. ネットワークとプロトコル</h4>
+
+<ul>
+<li><a href="http://ascii.jp/elem/000/000/424/424788/">TCP/IPの基礎の基礎を理解していますか？</a> (遠藤哲, Ascii, 2009/6/15)</li>
+</ul>
+
+<h4>2-2. ネットワークの構築</h4>
+
+<ul>
+<li><a href="http://d.hatena.ne.jp/Alzirr/20090901/1251756757">現在のネットワーク図</a> (Alzirr Blog, 2009/9/1)</li>
+<li><a href="http://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%BC%E3%82%B5%E3%83%8D%E3%83%83%E3%83%88">イーサネット</a> (Wikipedia)</li>
+<li><a href="http://www.allied-telesis.co.jp/products/list/wireless/knowl.html">無線LAN</a> (Allied Telesis)</li>
+
+</ul>
+
+<h4>2-3. IPアドレス</h4>
+
+<ul>
+<li><a href="http://seki.jpn.org/ssi/env.html">環境変数チェッカー</a> (関勝寿)</li>
+<li><a href="http://www.geekpage.jp/blog/?id=2012/9/14/1">IPv4アドレス競争入札事例</a> (Geekなページ, 2012/9/14)</a></li>
+<li><a href="http://japan.zdnet.com/sp/10things/20423460/">IPv6アドレスについて知っておくべき10のこと</a> (ZDNet Japan, 2010/12/1)</li>
+<li><a href="http://ja.wikipedia.org/wiki/IPv6">IPv6</a> (Wikipedia)</li>
+<li><a href="http://www.nikkei.com/article/DGXZZO40159460U2A400C1000000/">ＩＰｖ６への世界一斉対応、ＮＴＴは乗り遅れ フレッツ加入者のｖ６接続は遮断</a> (日経新聞, 2012/4/5)</li>
+<li><a href="http://www.worldipv6launch.org/">World IPv6 Launch</a></li>
+<li><a href="http://internet.watch.impress.co.jp/docs/news/20120419_527547.html">IPv6遅延問題にISPとNTT東西が共同対策、海外では日本からのIPv6接続抑制も</a> (三柳英樹, Internet Watch, 2012/4/19)</li>
+<li><a href="http://test-ipv6.jp/">あなたの IPv6 接続性をテストしましょう。</a> (Jason Fesler)</li>
+<li><a href="http://www.itbook.info/study/p54.html">ネットワークアドレスとホストアドレス</a> (ネットワークエンジニアを目指して)</li>
+<li><a href="http://www.geekpage.jp/technology/nat/whatis-nat.php">NATとは</a> (Geekなページ)</li>
+
+</ul>
+
+<h4>2-4. ドメインネームシステム</h4>
+
+<ul>
+<li><a href="http://ja.wikipedia.org/wiki/%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E5%90%8D">ドメイン名</a> (Wikipedia)</li>
+<li><a href="http://www.nic.ad.jp/ja/dom/system.html">ドメイン名のしくみ</a> (JPNIC)</li>
+<li><a href="http://www.iana.org/domains/root/db/">Root Zone Database</a> (IANA)</li>
+<li><a href="http://www.geekpage.jp/blog/?id=2012/6/13/5">トップレベルドメイン大幅増加へ、ICANNが申請リスト公開</a> (Geekなページ, 2012/6/13)</li>
+<li><a href="http://home.interlink.or.jp/~t-ikeda/nihonregistrar.htm">日本のレジストラ一覧</a></li>
+<li><a href="http://takagi-hiromitsu.jp/diary/20090607.html#p02">地域型ドメイン名は廃止してはどうか</a> (高木浩光, 2009/6/7)</li>
+<li><a href="http://ascii.jp/elem/000/000/489/489286/">正しいURLなのに偽サイトに飛ばされる「ファーミング」とは？</a> (遠藤哲, ASCII.jp, 2010/1/20)</li>
+<li><a href="https://www.jpcert.or.jp/at/2012/at120008.html">DNS 設定を書き換えるマルウエア (DNS Changer) 感染に関する注意喚起</a> (JPCERT/CC, 2012/3/7)</li>
+<li><a href="http://ja.wikipedia.org/wiki/%E3%83%AB%E3%83%BC%E3%83%88%E3%82%B5%E3%83%BC%E3%83%90">ルートサーバ</a> (Wikipedia)</li>
+</ul>
+
+<h4>2-5. ポート番号</h4>
+
+<ul>
+<li><a href="http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xml">Service Name and Transport Protocol Port Number Registry</a> (IANA)</li>
+</ul>
+
+<h4>2-6. ネットワークの状態の調べ方</h4>
+
+<ul>
+<li><a href="http://technet.microsoft.com/en-us/library/cc751206.aspx">TCP/IP Utilities Reference</a> (Microsoft)</li>
+</ul>
+
+<h3><a name="3">3. ネットワークサービス</a></h3>
+
+<h4>3-1. Web のしくみ</h4>
+
+<ul>
+<li><a href="http://www.nec.co.jp/soft/siteshell/merit/merit01.html">Webアプリケーションの脆弱性</a> (NEC)</li>
+<li><a href="http://thinkit.co.jp/story/2010/11/15/1872">Webアプリケーション・セキュリティ</a> (斉藤純平, Think IT, 2010/11/15)</li>
+<li><a href="http://gihyo.jp/dev/serial/01/php-security/0023">まだまだ残っているCSRF攻撃</a> (大垣靖男, 技術評論社, 2009/2/20)</li>
+</ul>
+
+<h4>3-2. メールのしくみ</h4>
+
+<ul>
+<li><a href="http://www.atmarkit.co.jp/fsecurity/special/04smime/smime01.html">【特集】S/MIMEでセキュアな電子メール環境をつくる！</a> (澤野弘幸, @IT, 2001/5/30)</li>
+<li><a href="http://wiki.livedoor.jp/diveintounlimit/d/%A5%E1%A1%BC%A5%EB%A4%CE%A5%D8%A5%C3%A5%C0%A5%D5%A5%A3%A1%BC%A5%EB%A5%C9%A1%A6%A5%DE%A5%CB%A5%A2%A5%C3%A5%AF%A5%B9%3A%20%C9%B8%BD%E0">メールのヘッダフィールド・マニアックス: 標準</a> (鳥さんの落書き帳)</li>
+<li><a href="http://www.ipa.go.jp/security/topics/20120523_spf.html">なりすましメール撲滅に向けたSPF（Sender Policy Framework）導入の手引き</a> (IPA, 2012/5/23)</li>
+<li><a href="http://law.e-gov.go.jp/htmldata/H14/H14HO026.html">特定電子メールの送信の適正化等に関する法律</a> (平成14年4月17日法律第26号)</li>
+<li><a href="http://www.dekyo.or.jp/soudan/">迷惑メール相談センター</a></li>
+</ul>
+
+<h4>3-3. 様々なアプリケーション層のプロトコル</h4>
+
+<ul>
+<li><a href="http://www.atmarkit.co.jp/fwin2k/network/baswinlan020/baswinlan020_01.html">ファイル共有プロトコルSMB／CIFS（その1）</a> (デジタルアドバンテージ, @IT, 2004/10/29)</li>
+</ul>
+
+<h3><a name="4">4. 情報セキュリティ対策</a></h3>
+
+<h4>4-1. ネットワークとセキュリティ</h4>
+
+<ul>
+<li><a href="http://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3">コンピュータセキュリティ</a> (Wikipedia)</li>
+<li><a href="http://www.st.ryukoku.ac.jp/~kjm/security/memo/">セキュリティーホール memo</a> (小島肇)</li>
+</ul>
+
+<h4>4-2. コンピュータシステムに対する攻撃方法</h4>
+
+<ul>
+<!-- li><a href="http://www.zdnet.com/news/report-net-users-picking-safer-passwords/150640">Net users picking safer passwords</a> (Joris Evers, ZDNet, 2006/12/16)</li --> 
+<!-- li><a href="http://www.asahi.com/national/update/1026/TKY201110250740.html">全衆院議員のパスワード盗難か　管理者権限で操作</a> (朝日新聞, 2011/10/26)</li -->
+- セキュリティホールmemo <a href="http://www.st.ryukoku.ac.jp/~kjm/security/memo/2011/10.html#20111025__shu">10/25</a> <a href="http://www.st.ryukoku.ac.jp/~kjm/security/memo/2011/10.html#20111026__shu">10/26</a></li>
+<!-- li><a href="http://www.yomiuri.co.jp/national/news/20111216-OYT1T00729.htm">参院ＩＤ・パスワード、１千人分流出か</a> (2011/12/16)</li -->
+<li><a href="http://itpro.nikkeibp.co.jp/article/NEWS/20120802/413901/">「トロイの木馬に5つの先進機能」、RSAが警鐘</a> (清嶋 直樹, ITpro, 2012/8/2)</li>
+<li><a href="http://www.itmedia.co.jp/news/articles/1111/11/news006.html">スマホウイルスはどのくらい怖いのか？</a> (國谷武史, ITmedia, 2011/11/11)</li>
+<li><a href="http://www.ipa.go.jp/security/txt/2012/05outline.html">「 あなたを狙うスマホアプリに要注意！ 」～不正なアプリをインストールしてしまわないために～</a> (IPA, 2012/5/7)</li>
+<li><a href="http://blog.trendmicro.co.jp/archives/5193">Android端末を狙う偽アプリ再び確認　Adobe Flash Player を装う</a> (トレンドマイクロセキュリティブログ, 2012/5/11)</li>
+<li><a href="http://itpro.nikkeibp.co.jp/article/NEWS/20111206/375901/">相次ぐWebサービスの不正利用、パスワードを盗まれて悪用される</a> (勝村幸博, ITpro, 2011/12/6)</li>
+<li><a href="http://ja.wikipedia.org/wiki/%E3%83%9C%E3%83%83%E3%83%88%E3%83%8D%E3%83%83%E3%83%88">ボットネット</a> (Wikipedia)</li>
+<li><a href="http://blog.f-secure.jp/archives/50680035.html">日本は今でも安全な国か？</a> (福森大喜, エフセキュアブログ, 2012/9/24)</li>
+<li><a href="https://www.ccc.go.jp/">サイバークリーンセンター</a> (総務省、経済産業省)</li>
+<!-- li><a href="http://www.yomiuri.co.jp/national/news/20121016-OYT1T00200.htm">「トロイ消さず、警察試す」ＰＣ操作で犯行声明</a> (読売新聞, 2012/10/16)</li -->
+</ul>
+
+<h4>4-3. サイバー犯罪の増加</h4>
+
+<ul>
+<li><a href="http://www.npa.go.jp/cyber/">警察庁 サイバー犯罪対策</a> / <a href="http://www.npa.go.jp/cyber/statics/index.html">統計</a> / <a href="http://www.npa.go.jp/cyber/video/index.html">情報セキュリティ対策ビデオ</a></li>
+</ul>
+
+<h4>4-4. セキュリティ対策</h4>
+
+<ul>
+<li><a href="http://www.microsoft.com/ja-jp/security/default.aspx">Microsoft セーフティとセキュリティ センター</a> / <a href="http://www.microsoft.com/ja-jp/security/pc-security/default.aspx#%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E6%9B%B4%E6%96%B0%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0">最新のセキュリティ情報</a> (Microsoft)</li>
+<li><a href="http://www.apple.com/jp/support/security/">Apple 製品のセキュリティ</a> / <a href="http://support.apple.com/kb/HT1222?viewlocale=ja_JP&locale=ja_JP">Apple セキュリティアップデート</a> (Apple)</li>
+<li><a href="http://www.jpcert.or.jp/">JPCERT/CC</a></li>
+<li><a href="http://itpro.nikkeibp.co.jp/article/NEWS/20120605/400322/">PowerPointファイルにも危険が潜む、開くだけでウイルス感染の恐れ</a> (勝村幸博, ITpro, 2012/6/5)</li>
+<li><a href="http://www.itmedia.co.jp/enterprise/articles/1208/08/news030.html">Reutersの公式Twitter乗っ取り事件、WordPressの旧バージョン利用が原因か</a> (鈴木聖子, ITmedia, 2012/8/8)</li>
+<li><a href="http://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%B3%E3%83%81%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2">アンチウイルスソフトウェア</a> (Wikipedia)</li>
+<li><a href="http://blog.f-secure.jp/archives/50283874.html">不正アンチウィルス・ソフトウェアに導くサモア地震のニュース</a> (F-Secure, 2009/9/30)</li>
+<li><a href="http://gigazine.net/news/20120102-fake-anivirus-scams/">偽アンチウイルスソフト詐欺がAndroid向けにシフト、2012年にさらに流行へ</a> (Gigazine, 2012/1/2)</li>
+<li><a href="http://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%82%A2%E3%83%BC%E3%82%A6%E3%82%A9%E3%83%BC%E3%83%AB">ファイアーウォール</a> (Wikipedia)</li>
+<li><a href="http://internet.watch.impress.co.jp/docs/column/security/20100709_379029.html">中国のグレートファイアウォールを乗り越える「西廂計劃」　ほか</a> (山賀正人, Internet Watch, 2010/7/9) </li>
+<li><a href="http://www.microsoft.com/ja-jp/security/pc-security/firewalls-whatis.aspx">ファイアウォールとは?</a> (Microsoft)</li>
+<li><a href="http://ja.wikipedia.org/wiki/%E9%9D%9E%E6%AD%A6%E8%A3%85%E5%9C%B0%E5%B8%AF_%28%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%29">非武装地帯 (コンピュータセキュリティ)</a> (Wikipedia)</li>
+<li><a href="http://www.ipa.go.jp/security/antivirus/attach5.html">メールの添付ファイルの取り扱い 5つの心得</a> (IPA)</li>
+<li><a href="http://blog.f-secure.jp/archives/50659093.html">標的型攻撃メールの手口と対策</a> (福森大喜, F-Secure, 2012/3/29)</li>
+<li><a href="http://ascii.jp/elem/000/000/544/544216/">USBメモリで拡がるウイルス「オートラン」は、なぜ怖い</a> (飯田朝洋, ASCII.jp, 2010/8/16)</li>
+<li><a href="http://support.microsoft.com/kb/967715/ja">Windows の自動実行機能を無効にする方法</a> (Microsoft サポート)</li>
+<li><a href="http://www.ipa.go.jp/security/fy14/contents/soho/html/chap1/pass.html">パスワードの管理と注意</a> (IPA)</li>
+<li><a href="http://www.woodensoldier.info/soft/idm.htm">ID Manager</a> (WoodenSoldier Software)</li>
+</ul>
+
+<h4>4-5. 暗号化技術</h4>
+
+<ul>
+<li><a href="http://ja.wikipedia.org/wiki/%E6%9A%97%E5%8F%B7">暗号</a> (Wikipedia)</li>
+<li><a href="http://rot13.com/">ROT13</a></li>
+<li><a href="http://www.cybersyndrome.net/rsa/">RSA暗号体験入門</a> (CyberSyndrome)</li>
+<li><a href="http://www.maitou.gr.jp/rsa/rsa01.php">サルにもわかるＲＳＡ暗号</a> (伊藤正史, まいとう情報通信研究会, 1997/8/10)</li>
+<li><a href="http://itpro.nikkeibp.co.jp/article/NEWS/20130214/456308/">ベリサイン、RSAよりも負荷が軽いECC（楕円曲線暗号）をSSL証明書に採用</a> (日川 佳三, ITpro, 2013/2/14)</li>
+<li><a href="https://www.rcis.aist.go.jp/special/websafety2007/">安全なWebサイト利用の鉄則</a> (産業技術総合研究所, 2007/3/23)</li>
+<li><a href="http://www.ipa.go.jp/security/ciadr/wirelesslan.html">一般家庭における無線LANのセキュリティに関する注意</a> (IPA)</li>
+<li><a href="http://gigazine.net/news/20081013_wep_morii/">一瞬にして無線LANのWEPを解読する方法がついに登場、まもなく解読プログラムを公開予定</a> (Gigazine, 2008/10/13)</li>
+<li><a href="http://www.imes.boj.or.jp/research/abstracts/japanese/kk28-3-5.html">量子暗号通信の仕組みと開発動向</a> (後藤仁, 金融研究 第28巻第3号 p.107-149, 2009)</li>
+</ul>
+
+<h4>4-6. セキュリティポリシー</h4>
+
+<ul>
+<li><a href="http://ja.wikipedia.org/wiki/%E6%83%85%E5%A0%B1%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC">情報セキュリティポリシー</a> (Wikipedia)</li>
+<li><a href="http://internet.watch.impress.co.jp/docs/news/20120625_542602.html">ファーストサーバが大規模障害の中間報告とFAQ、原因は脆弱性対策の不具合</a> (三柳英樹, Internet Watch, 2012/6/25)</li>
+<li><a href="http://www.computerworld.jp/topics/601/203863">「ファーストサーバ同様の問題は今後も発生。2015年までに数百万ドル相当のデータ損失も」――ガートナーが警鐘</a> (三島一孝, Computerworld, 2012/7/2)</li>
+<li><a href="http://japan.cnet.com/sp/column_security/20054306/">セキュリティポリシーを策定する</a> (根本美和, CNET Japan, 2003/05/14)</li>
+<li><a href="http://www.ipa.go.jp/security/manager/know/sme-guide/">中小企業向け情報セキュリティ対策</a> (IPA)</li>
+<li><a href="http://www2.ttcn.ne.jp/honkawa/2795b.html">主な個人情報流出事件</a> (本川裕, 2009/4/18)</li>
+<li><a href="http://ascii.jp/elem/000/000/455/455750/">どうする？USBメモリによる情報漏えいやウイルス感染</a> (大谷イビサ, ASCII, 2009/9/7)</li>
+<li><a href="http://www.yomiuri.co.jp/net/security/ryusyutsu/20070613nt0d.htm">警視庁の情報１万件が流出…巡査長ＰＣウィニー感染で</a> (読売新聞, 2007/6/13) </li>
+<li><a href="http://www.47news.jp/CN/201206/CN2012060201001762.html">公務員のスマホ業務使用解禁へ　急速普及で政府</a> (47NEWS, 2012/6/2)</li>
+<li><a href="http://diamond.jp/articles/-/19610">職場での私物デバイス使用「BYOD」をどう扱う？スマホ時代の情報セキュリティで問われる“本質論”</a> (クロサカタツヤ, ダイアモンド・オンライン, 2012/6/7)</li>
+<li><a href="http://law.e-gov.go.jp/htmldata/H15/H15HO057.html">個人情報の保護に関する法律</a> (平成15年5月30日法律第57号)</li>
+<li><a href="http://www.caa.go.jp/seikatsu/kojin/gimon-kaitou.html">個人情報保護法に関するよくある疑問と回答</a> (消費者庁)</li>
+<li><a href="http://takagi-hiromitsu.jp/diary/20100403.html">ウィルコムから回答「契約者固有IDは弊社にとって個人情報」</a> (高木浩光, 2010/4/3)</li>
+<li><a href="http://www.hyuki.com/techinfo/uniqid.html">固有IDのシンプル・シナリオ</a> (結城浩)</li>
+<li><a href="http://takagi-hiromitsu.jp/misc/it.nikkei.co.jp/20030422/">固定IDは"デジタル化された顔"――プライバシー問題の勘所</a> (高木浩光, 日経新聞, 2003/4/22)</li>
+<li><a href="http://takagi-hiromitsu.jp/diary/20120508.html">「個人情報」定義の弊害、とうとう地方公共団体にまで</a> (高木浩光, 2012/5/8)</li>
+<li><a href="http://www.nikkei.com/article/DGXNASFK2201O_S2A520C1000000/">米国「プライバシー権利章典」の衝撃　出遅れた日本</a> (日経新聞, 2012/5/25)</li>
+<li><a href="http://itpro.nikkeibp.co.jp/article/COLUMN/20120713/409032/">総務省がスマホプライバシー基準を公開 - 端末IDに個人情報並みの扱い求める</a> (浅川直輝, 日経コンピュータ 2012年7月19日号)</li>
+</ul>
+
+<h3><a name="ex">章末問題</a></h3>
+
+<ul>
+<li><a href="http://www.jitec.ipa.go.jp/">情報処理技術者試験</a> (情報処理推進機構)</li>
+</ul>
+
+
+<!-- ul>
+<li><a href="http://www.atmarkit.co.jp/news/analysis/201110/27/smartphone.html">スマホアプリとプライバシーの「越えてはいけない一線」</a> (@IT, 2011/10/27)</li>
+<li><a href="http://itpro.nikkeibp.co.jp/article/COLUMN/20060830/246798/">IDSとIPS</a> (ITpro)</li>
+<li><a href="http://www.atmarkit.co.jp/fsecurity/rensai/snort01/snort01.html">Snortでつくる不正侵入検知システム</a> (@IT)</li>
+</ul -->
+
+<hr>
+
+<div class="copyright">
+Copyright (C) 2012 Katsutoshi Seki. All Rights Reserved.<br>
+<img src="http://seki.webmasters.gr.jp/counter/npc.cgi?L=security/index.html&amp;T=0&amp;C=008800,F8F8F0&amp;DI=2" alt="counter">
+</div>
+
+<!-- Google Analytics starts -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6089562-1");
+pageTracker._trackPageview();
+</script>
+<!-- Google Analytics ends -->
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="ja">
+<head>
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+  <title>情報処理実習F: 第7回　スタイルシートの利用</title>
+  <META NAME="author" LANG="ja" CONTENT="Katsutoshi Seki">
+  <LINK REL="stylesheet" TYPE="text/css" HREF="style.css">
+</head>
+
+<body>
+
+<div class="breadcrumb">
+<strong>このページの位置: </strong><a href="../index.html">関 勝寿</a> : 担当講義科目 > <a href="index.html">情報処理実習F</a> >第7回　スタイルシートの利用</div>
+
+
+<h1>情報処理実習F:第7回　スタイルシートの利用</h1>
+
+<h2>前回の復習</h2>
+
+<ul>
+<li>画像ファイルを貼りつける&lt;img&gt;タグの使い方について学んだ。</li>
+<li>画像ファイルサイズの指定について、実際のサイズよりも小さいサイズを指定している人が多かった。表示するサイズと同じサイズの画像を用意しよう。</li>
+<li>画像ファイルが表示されていない人がいた。おそらくは画像ファイルのアップロードを忘れているのであろう。先週確認したように「手元のファイルをテキストエディタで更新する」「手元のファイルをブラウザで確認する」「ftpでサーバーにアップロードする」「アップロードされたファイルをブラウザで確認する」という一連の作業をすれば、最後の「アップロードされたファイルをブラウザで確認する」という段階で画像が表示されないことに気がつくはず。</li>
+<li><a href="02.html">２回目の授業資料</a>に、Webページ公開の手順をまとめた。</li>
+</ul>
+
+<h2>スタイルシートの利用</h2>
+
+<ul>
+<li><a href="http://www.tohoho-web.com/css/basic.htm">とほほのスタイルシート入門（基礎知識）</a>で、スタイルシートの基本について学ぶ。</li>
+<li><a href="http://www.csszengarden.com/">css Zen Garden</a> (<a href="http://www.csszengarden.com/tr/japanese/">和訳</a>) で、CSSを変えることでWebサイトの見栄えがいかに変わるかを見る。</li>
+<li>このように、<strong>HTMLに文書の論理構造を記述し、CSSに文書の見栄えを記述する</strong>ことが、HTMLの本来の意義に沿った方法である。そのためには、&lt;font&gt; &lt;b&gt; &lt;i&gt; 等の見栄えを記述するためのHTMLタグを用いずに、論理構造を示すHTMLタグを用い、見栄えはCSSで記述するのが良い。
+<li><a href="http://www2.toyo.ac.jp/~seki_k/johoF/style.css">このページのスタイルシート</a>をダウンロードする。</li>
+<li>ダウンロードしたスタイルシートを、自分のページに設定する。</li>
+<li>見栄えが変わりましたか？</li>
+<li>スタイルシートを読んで、意味を理解する。<a href="http://www.tohoho-web.com/css/index.htm">とほほのスタイルシート入門</a>を参考にする。</li>
+<li>スタイルシートを編集する。<a href="http://www.color-guide.com/">色見本の館</a>を参考に色を選び、フォントのサイズ等も変えてみよう。</li>
+<li>HTMLの本文では&lt;font&gt;タグをなるべく使わずに、強調する箇所は<strong>&lt;strong&gt;</strong> (強めの強調)または<em>&lt;em&gt;</em> (弱めの強調)を使う。&lt;strong&gt;と&lt;em&gt;の見栄えについては、スタイルシートで制御する。</li>
+<li>このように文書の見栄えをスタイルシートファイルに記述しておくことで、スタイルシートファイルを修正する事でWebページの見栄えを統一的に変えることができるため、便利である。</li>
+<li><a href="http://www.stylish-style.com/csstec/csstec-top.html">スタイルシートテクニック</a>には、色々なテクニックが紹介されている。</li>
+</ul>
+
+<h2>課題</h2>
+
+<p>
+スタイルシートを編集して、オリジナルなデザインを作ってください。作成したページを授業用ウェブサーバーにFTPでアップロードして、<a href="meibo">名簿</a>のリンクから更新されたことを確認してください。
+</p>
+
+<hr>
+<p><a href="index.html">情報処理実習F</a></p>
+
+<div class="copyright">
+<script type="text/javascript">
+<!--
+document.writeln("最新更新日: " + document.lastModified + "<br>");
+today=new Date();
+document.writeln("Copyright (C) 2009-"+today.getFullYear()+" Katsutoshi Seki. All Rights Reserved.");
+//-->
+</script>
+</div>
+
+<!-- Google Analytics starts -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6089562-1");
+pageTracker._trackPageview();
+</script>
+<!-- Google Analytics ends -->
+
+</body>
+</html>

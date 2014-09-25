@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="ja">
+<head>
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+  <title>情報処理実習F: 第6回　HTMLの基礎3（画像の貼り付け）</title>
+  <META NAME="author" LANG="ja" CONTENT="Katsutoshi Seki">
+  <LINK REL="stylesheet" TYPE="text/css" HREF="../seki.css">
+</head>
+
+<body>
+
+<div class="breadcrumb">
+<strong>このページの位置: </strong><a href="../index.html">関 勝寿</a> : 担当講義科目 > <a href="index.html">情報処理実習F</a> > 第6回　HTMLの基礎3（画像の貼り付け）</div>
+
+
+<h1>情報処理実習F:第6回　HTMLの基礎3（画像の貼り付け）</h1>
+
+<h2>前回の復習</h2>
+
+<ul>
+<li>表の作成方法について、table, tr, tdタグの使い方を覚えた。</li>
+<li>リンクの方法について、<a href="http://www.tohoho-web.com/wwwbeg5.htm#RelativeLink">相対リンク</a>の使い方をよく理解すること。</li>
+<li>手元のフォルダ名を含むファイル名をそのままリンクしている人が何人かいた。そうではなくて、常に「リンクする側のファイル」「リンクされる側のファイル」のフォルダの位置関係を考えて、相対リンクでフォルダの位置を指定する。</li>
+<li>更新したファイルをすべてアップロードしたことをきちんと確認すること。</li>
+<li>「手元のファイルをテキストエディタで更新する」「手元のファイルをブラウザで確認する」「ftpでサーバーにアップロードする」「アップロードされたファイルをブラウザで確認する」という一連の作業を、よく理解すること。</li>
+<li>時間内に課題ができなかったら、簡単にあきらめず、次の回の授業がはじまるまでに課題を終わらせること。</li>
+<li>分からないことがあれば、授業中にできるだけ積極的に質問し、また授業が終わってからも<a href="http://www2.toyo.ac.jp/~seki_k/toyo/index.html">連絡方法</a>を読んで積極的に質問すること。</li>
+</ul>
+
+<h2>画像の貼り付け</h2>
+
+<ul>
+<li><a href="http://www.tohoho-web.com/wwwbeg.htm">ホームページ入門</a>の「画像を貼り付けよう」を習得する。</li>
+<li>作成例：<a href="http://www2.toyo.ac.jp/~seki_k/index.html">関 勝寿</a>のページのソースを見る。写真を表示している箇所はどこか。写真を文章の左に表示するために、どのような手法を用いているか。
+<li>先週の宿題：画像ファイルを持って来ましたね。<a href="photo/">関が用意した画像ファイル</a> (これは、関が使います。皆さんは、皆さんが用意して来たファイルを使って下さい)</li>
+<li>デジカメで撮影した写真をそのままウェブに掲載すると、サイズが大きくなりすぎることがある。その場合には、適切なサイズに直してからウェブに掲載する。<a href="imagesize.html">画像サイズ比較</a>で、様々なサイズの画像を比較してみよう。</li>
+<li>コンピュータの<a href="http://e-words.jp/p/r-screensize.html">画面解像度</a>には色々あるため、あまり大きな画像サイズの写真を使うのは不適切である。</li>
+<li>画像サイズを変換する方法には色々ある。<a href="http://www.irfanview.com/">IrfanView</a>という画像閲覧ソフトを使うことで、画像サイズの変換が出来る。このソフトはフリーソフトであり、<a href="http://www8.plala.or.jp/kusutaku/iview/">日本語版</a>も配布されている。</li>
+<li>なお、大量の写真をウェブで公開する場合には、<a href="http://0xcc.net/zphoto/">zphoto</a>のようなソフトを利用すると便利である。Macであれば、iPhotoにアルバムWebページ書き出しの機能がある。</li>
+</ul>
+
+<h2>様々なタグ</h2>
+
+<ul>
+<li><a href="http://www.tohoho-web.com/html/index2.htm">HTMLリファレンス</a>で、色々なタグが説明されている。以下のタグの意味を調べてみよう。</li>
+<li>コメント: &lt;!-- --&gt;</li>
+<li>水平線: &lt;hr&gt;</li>
+<li>テーブル: &lt;th&gt; &lt;caption&gt;</li>
+<li>意味: &lt;address&gt; &lt;blockquote&gt; &lt;q&gt; &lt;sub&gt; &lt;sup&gt; &lt;em&gt; &lt;strong&gt; &lt;acronym&gt; &lt;cite&gt;</li>
+<li>べたテキスト: &lt;pre&gt;
+</ul>
+
+<h2>公開されている素材の利用</h2>
+
+<ul>
+<li>Web上には、ボタン、背景画像等の様々な素材が公開されている。利用許諾に関する記述をサイトで確認してから、素材を利用する。</li>
+<li><a href="http://www.famfamfam.com/lab/icons/silk/preview.php">Silk icons preview</a>: アイコン</li>
+<li><a href="http://sozai-hp.com/">素材HP 無料素材サイト集</a>: フリー素材サイト専門の、素材検索エンジン</li>
+
+</ul>
+
+<h2>課題</h2>
+
+<p>
+先週の宿題で用意した画像を貼り付けて、画像に簡単な説明を加えてください。作成したページを授業用ウェブサーバーにFTPでアップロードして、<a href="meibo">名簿</a>のリンクから更新されたことを確認してください。
+</p>
+
+<hr>
+<p><a href="index.html">情報処理実習F</a></p>
+
+<div class="copyright">
+<script type="text/javascript">
+<!--
+document.writeln("最新更新日: " + document.lastModified + "<br>");
+today=new Date();
+document.writeln("Copyright (C) 2009-"+today.getFullYear()+" Katsutoshi Seki. All Rights Reserved.");
+//-->
+</script>
+</div>
+
+<!-- Google Analytics starts -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6089562-1");
+pageTracker._trackPageview();
+</script>
+<!-- Google Analytics ends -->
+
+</body>
+</html>

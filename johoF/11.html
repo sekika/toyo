@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="ja">
+<head>
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+  <title>情報処理実習F: 第11回　JavaScriptの基礎 </title>
+  <META NAME="author" LANG="ja" CONTENT="Katsutoshi Seki">
+  <LINK REL="stylesheet" TYPE="text/css" HREF="../seki.css">
+</head>
+
+<body>
+
+<div class="breadcrumb">
+<strong>このページの位置: </strong><a href="../index.html">関 勝寿</a> : 担当講義科目 > <a href="index.html">情報処理実習F</a> > 第11回　JavaScriptの基礎</div>
+
+<h1>第11回　JavaScriptの基礎</h1>
+
+<h2>JavaScript</h2>
+
+<ul>
+<li><a href="http://ja.wikipedia.org/wiki/JavaScript">Wikipedia: JavaScript</a>で、JavaScriptの特長と歴史について学ぶ。</li>
+<li><a href="http://www.scollabo.com/banban/index.html">Web for beginner ホームページ作成支援</a> の <a href="http://www.scollabo.com/banban/java/index.html">JavaScript入門</a>で、JavaScriptの動作例を見る。また、JavaScriptの基本を学ぶ。</li>
+<li><a href="http://www.scollabo.com/banban/lectur/ht17.html">Webページのタブー</a>では、JavaScriptに頼ったページを戒められている。不用意に頼りすぎないように注意しよう。JavaScriptを使う時には、JavaScriptをオフにしても閲覧に支障なく、必要最小限の機能が提供され、アクセシビリティが低下しないように工夫をする。たとえば、JavaScriptを使ったプルダウンメニューの他に、通常のHTMLによるメニューを用意する。<a href="http://itpro.nikkeibp.co.jp/article/COLUMN/20071105/286432/">控えめなJavaScript (Unobstrusive JavaScript)</a>という考え方がある。</li>
+</ul>
+
+<h2>課題</h2>
+
+<p>
+JavaScript を使って、ページの最終更新日とURLを表示してください。<a href="meibo">名簿</a>のリンクから更新されたことを確認してください。
+</p>
+
+<hr>
+<p><a href="index.html">情報処理実習F</a></p>
+
+<div class="copyright">
+<script type="text/javascript">
+<!--
+document.writeln("最新更新日: " + document.lastModified + "<br>");
+today=new Date();
+document.writeln("Copyright (C) 2009-"+today.getFullYear()+" Katsutoshi Seki. All Rights Reserved.");
+//-->
+</script>
+</div>
+
+<!-- Google Analytics starts -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6089562-1");
+pageTracker._trackPageview();
+</script>
+<!-- Google Analytics ends -->
+
+</body>
+</html>

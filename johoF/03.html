@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="ja">
+<head>
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+  <title>情報処理実習F: 第3回　HTMLの基礎１（タグの使い方と基本骨格）</title>
+  <META NAME="author" LANG="ja" CONTENT="Katsutoshi Seki">
+  <LINK REL="stylesheet" TYPE="text/css" HREF="../seki.css">
+</head>
+
+<body>
+
+<div class="breadcrumb">
+<strong>このページの位置: </strong><a href="../index.html">関 勝寿</a> : 担当講義科目 > <a href="index.html">情報処理実習F</a> > 第3回　HTMLの基礎１（タグの使い方と基本骨格）</div>
+
+
+<h1>情報処理実習F: 第3回　HTMLの基礎１（タグの使い方と基本骨格）</h1>
+
+<h2>前回の復習</h2>
+
+<ul>
+<li>WWWはいつリリースされたか？
+<li>HTMLとは何か？ 何の略か？
+</ul>
+
+<h2>HTMLの基礎</h2>
+
+<ul>
+<li>
+<a href="http://www.tohoho-web.com/www.htm">とほほのWWW入門</a>を参考に、HTMLについて学ぶ。</li>
+<li><a href="http://www.tohoho-web.com/wwwbeg.htm">ホームページ入門</a>のHTMLの基本テクニックまでを習得する。前回の課題で作成したホームページに使われているタグを理解する。</li>
+</ul>
+
+<h2>HTMLのバージョン</h2>
+
+<p>
+先週作成したページの最初の行にある
+<blockquote>
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;&gt;
+</blockquote>
+とは、どういうことでしょうか？この行は、HTMLのバージョンを宣言しています。HTML 4.01 Transitional を使って、HTMLを作成することになります。
+</p>
+<p>参考：<a href="http://www.tohoho-web.com/html/doctype.htm">&lt;!DOCTYPE&gt; - ドキュメントタイプ</a>
+
+<p>
+なお、この授業は<strong>HTML 4.01</strong>を基本として進めますが、現在HTMLの次のバージョンである<strong>HTML 5</strong>の策定が進められています。
+</p>
+
+<p>参考: <a href="http://ja.wikipedia.org/wiki/HTML5">Wikipedia: HTML 5</a></p>
+
+<h2>文字コード</h2>
+
+<p>
+文字コードは、コンピュータで文字を利用するために文字とバイト表現（数字）との対応を定めたものです。詳しくは<a href="http://www.kanzaki.com/docs/jcode.html">日本語と文字コード (Web KANZAKI)</a>を参照してください。日本語のWebサイトでは、使用する文字コードとしてシフトJIS、JISコード(ISO-2022-JP)、EUC、あるいは国際標準の Unicode (UTF-8) がよく使われています。Windows付属のメモ帳でテキストファイルを作成すると、シフトJISコードとなります。秀丸エディタでは、複数の文字コードを扱うことができます。
+</p>
+<p>
+Webサイトがどの文字コードを使っているかは、Webブラウザが自動的に判別します。しかし、自動判別が正常に働かないと文字化けを起こします。ヘッダ部分に
+<blockquote>
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=Shift_JIS&quot;&gt;
+</blockquote>
+と書かれているのは、このファイルはHTML文書であり、文字コードはシフトJISであることを意味しています。このように明記することで、ブラウザはそのページがシフトJISコードで書かれていることを知り、文字化けを起こさずにすみます。
+</p>
+<p>
+この授業のページでは、Unicode (UTF-8) が使われています。ソースを確認してみてください。Unicode を使うと、以下のように色々な国の文字を同じページに表示する事ができます。留学生等で、日本語、英語以外の文字を扱う人は Unicode を使うのがいいでしょう。
+</p>
+
+<p>
+中国語: 你好。我是日本人。我姓関。我叫関勝寿。谢谢。
+</p>
+<p>韓国語: 안녕 하세요. 일본말 할 줄 아세요?</p>
+<p>タイ語: สวัสดี ครับ ผมชื่อ  คัตสึโทะชิ เซะบิ  ครับ</p>
+<p>ロシア語: Здравствуйте!</p>
+<p>アラビア語: اَلسَّلامُعَلَىْكُمْ</p>
+
+<h2>色の指定</h2>
+
+<ul>
+<li><a href="http://www.tohoho-web.com/wwwcolor.htm">とほほの色入門・色見本</a>で、色の指定に関する基本を学ぶ。</li>
+<li>色を選ぶ時には<a href="http://www.tagindex.com/color/">カラーチャート</a>や<a href="http://www.color-guide.com/">色見本の館</a>のようなサイトを参考にすると良い。</li>
+<li>色名で指定するのはHTMLで定義されている<a href="http://www.tagindex.com/color/basic_color.html">標準16色</a>に限り、それ以外の色を指定する時にはRGB値の16進数で記述すると良い。</li>
+</ul>
+
+<h2>課題</h2>
+
+<p>
+今日学んだことを使って、自己紹介のページを作成してください。
+</p>
+
+<ul>
+<li>h1とh2で見出しを構成してください。例：h1に「関勝寿のホームページ」h2に「趣味」「自己紹介」
+<li><b>太字</b>、<i>斜体</i>、<font size="+2">文字の大きさ</font>を変える、<font color="red">色</font>を変える、といったタグを適宜使って下さい。</li>
+<li>リスト書きを使って下さい（例えば、趣味を列記するなど）。
+</ul>
+
+<p>
+作成したページをToyoNet-ACEから提出して下さい。
+</p>
+
+<hr>
+<p><a href="index.html">情報処理実習F</a></p>
+
+<div class="copyright">
+<script type="text/javascript">
+<!--
+document.writeln("最新更新日: " + document.lastModified + "<br>");
+today=new Date();
+document.writeln("Copyright (C) 2009-"+today.getFullYear()+" Katsutoshi Seki. All Rights Reserved.");
+//-->
+</script>
+</div>
+
+<!-- Google Analytics starts -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6089562-1");
+pageTracker._trackPageview();
+</script>
+<!-- Google Analytics ends -->
+
+</body>
+</html>
