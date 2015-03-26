@@ -130,3 +130,10 @@ a:hover	{
   background-color : #ffff80;
 }
 
+table, th, td {
+    border: 1px solid black;
+}
+
+table.noborder, td.noborder {
+   border: 0;
+}
