@@ -130,10 +130,30 @@ a:hover	{
   background-color : #ffff80;
 }
 
-table, th, td {
-    border: 1px solid black;
+table {
+  border-collapse: separate;
+  border-spacing: 0px;
+  border-top: 1px solid #666;
+  border-left: 1px solid #666;
+}
+th{
+  padding: 4px;
+  text-align: center;
+  vertical-align: top;
+  background-color: rgb(85%, 85%, 100%);
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #444;
+  border-bottom: 1px solid #444;
+}
+td{
+  padding: 4px;
+  background-color: rgb(100%, 98%, 98%);
+  border-right: 1px solid #444;
+  border-bottom: 1px solid #444;
 }
 
 table.noborder, td.noborder {
    border: 0;
+   background: rgb(97%, 93%, 93%);
 }
