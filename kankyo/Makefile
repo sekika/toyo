@@ -1,5 +1,7 @@
 all:
 
+# pip install linkchecker
+
 linkcheck-html:
 	linkchecker -C --check-extern --output=html suzuki.html | tee linkcheck.html
 
