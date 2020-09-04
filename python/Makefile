@@ -13,10 +13,10 @@ pdf:
 	pdftk A=python.pdf cat A28-31 output 07.pdf
 	pdftk A=python.pdf cat A32-35 output 08.pdf
 	pdftk A=python.pdf cat A36-39 output 09.pdf
-	pdftk A=python.pdf cat A40-42 output 10.pdf
-	pdftk A=python.pdf cat A43-45 output 11.pdf
-	pdftk A=python.pdf cat A46-49 output 12.pdf
-	pdftk A=python.pdf cat A50-52 output 13.pdf
-	pdftk A=python.pdf cat A53-54 output 14.pdf
-	pdftk A=python.pdf cat A55-56 output 15.pdf
+	pdftk A=python.pdf cat A40-43 output 10.pdf
+	pdftk A=python.pdf cat A44-47 output 11.pdf
+	pdftk A=python.pdf cat A48-51 output 12.pdf
+	pdftk A=python.pdf cat A52-55 output 13.pdf
+	pdftk A=python.pdf cat A56-57 output 14.pdf
+	pdftk A=python.pdf cat A58-59 output 15.pdf
 
