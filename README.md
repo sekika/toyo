@@ -1,6 +1,6 @@
 seki-toyo
 =========
 
-Seki's website at Toyo university server
+Katsutoshi Seki's website
 
-http://www2.toyo.ac.jp/~seki_k/
+https://sekika.github.io/toyo/
