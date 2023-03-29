@@ -1,9 +1,9 @@
 all:
 
-# pip install linkchecker
+# python3 -m pip install linkchecker
 
 linkcheck-html:
-	linkchecker -C --check-extern --output=html suzuki.html | tee linkcheck.html
+	linkchecker --check-extern --output=html suzuki.html | tee linkcheck.html
 
 linkcheck: suzuki.html Makefile
 	linkchecker -C --check-extern --output=blacklist suzuki.html | grep -v 88_files | awk '{print $$3}' | sort > linkcheck
