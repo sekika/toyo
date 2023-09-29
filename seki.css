@@ -158,3 +158,48 @@ table.noborder, td.noborder {
    border: 0;
    background: rgb(97%, 93%, 93%);
 }
+
+/* Responsive default style */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 0;
+}
+
+.largeblock {
+  width: 65%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 0;
+}
+
+.smallblock {
+  width: 35%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 0;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style for width <= 600px */
+@media (max-width: 600px) {
+  .block {
+      width: 100%;
+  }
+  .largeblock {
+    width: 100%;
+  }
+  .smallblock {
+      width: 100%;
+  }
+}
