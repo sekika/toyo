@@ -159,6 +159,11 @@ table.noborder, td.noborder {
    background: rgb(97%, 93%, 93%);
 }
 
+/* Read more button */
+.readmore-area {
+  display: none;
+}
+
 /* Responsive default style */
 .container {
   display: flex;

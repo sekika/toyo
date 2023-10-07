@@ -16,6 +16,13 @@
   gtag('js', new Date());
 
   gtag('config', 'G-1JRPK4WZ2B');
+
+  function showMore(btn) {
+    var targetId = btn.getAttribute("href").slice(1);
+    document.getElementById(targetId).style.display = "block";
+    btn.parentNode.style.display = "none";
+    return false;
+  }
 </script>
 </head>
 <body>
@@ -43,12 +50,16 @@
 <ul>
   <li>Paper published on February 2023: <a href="https://doi.org/10.2478/johh-2022-0039">Evaluation of a general model for multimodal unsaturated soil hydraulic properties</a>. A program for calculation <a href="https://sekika.github.io/unsatfit/">unsatfit</a> is also available.</li>
 <li>Paper published on February 2023: <a href="https://doi.org/10.1016/j.agwat.2023.108195">Quantifying the contribution of meteorological factors and plant traits to canopy interception under maize cropland</a></li>
+<!-- "Show more button" https://allabout.co.jp/gm/gc/459102/ -->
+<li><a href="#readmore1" onclick="return showMore(this);">Show more</a></li>
+<div id="readmore1" class="readmore-area">
 <li>January 2023: <a href="https://sekika.github.io/unsoda/">UNSODA viewer</a> was released.</li>
 <li>Paper published on July 2022: <a href="https://doi.org/10.1002/saj2.20426">Comparison of water consumption for the conversion of croplands to orchards in dryland ecosystems</a></li>
 <li>Paper published on January 2022: <a href="https://doi.org/10.1002/vzj2.20168">Closed-form hydraulic conductivity equations for multimodal unsaturated soil hydraulic properties</a></li>
 <li>Paper published on June 2021: <a href="https://doi.org/10.1016/j.agee.2021.107342">Changes in rainfall partitioning and its effect on soil water replenishment after the conversion of croplands into apple orchards on the Loess Plateau</a></li>
 <li>Paper published on Feb. 2019: <a href="https://doi.org/10.31545/intagr/104413">
   Estimation of electrical conductivity of a soil solution from the monitored TDR data and an extracted soil solution</a>. The calculation of this paper is availabe with <a href="https://seki.webmasters.gr.jp/ecfit/">EC Fit</a>.</li>
+</div>
 </ul>
 
 <h2>Research interest - Soil physics and hydrology</h2>
