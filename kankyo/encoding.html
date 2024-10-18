@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>環境の科学参考サイト</title>
+  <meta name="description" content="Environmental science">
+  <link rel="stylesheet" type="text/css" href="../seki.css">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1JRPK4WZ2B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1JRPK4WZ2B');
+</script>
+</head>
+
+<body>
+
+<div class="breadcrumb">
+<strong>このページの位置: </strong><a href="../index.html">関 勝寿</a> : 担当講義科目 > <a href="../kankyo.html">環境の科学</a> > <a href="suzuki.html">環境科学参考サイト</a> > 文字化け回避方法</div>
+
+<h1>文字化け回避方法</h1>
+
+<p><a href="https://www.rite.or.jp/Japanese/project/tityu/tityu.html">CO<sub>2</sub>地中貯留プロジェクト</a>のページが文字化けをする場合の回避方法。</p>
+
+<h2>原因</h2>
+
+<p>HTML は Shift JIS で記述され、ヘッダにも文字コードが Shift JIS であると指定されている。しかし、HTTP レスポンスで文字コードが UTF-8 と指定されているため、ブラウザは UTF-8 で表示して、文字化けをする。</p>
+
+<h2>解決策</h2>
+
+以下の3通りが考えられる。
+
+<ol>
+<li><a href="https://web.archive.org/web/20211022024907/https://www.rite.or.jp/Japanese/project/tityu/tityu.html">2021年11月2日のアーカイブ</a>を参照する。</li>
+<li>WebページをPCに保存してそのファイルを開く。HTTP レスポンスがないため、Shift JIS で表示される。</li>
+<li>ブラウザの文字コード設定を変える。ブラウザごとの変更方法を以下にまとめる。</li>
+</ol>
+
+<h3>Google Chrome</h3>
+<p>Chrome は文字コードの変更をサポートしていない。したがって、他のブラウザを使うのが良い。Microsoft Edge も同様。</p>
+
+<h3>Firefox</h3>
+<ul>
+<li>メニューバーが表示されていない場合には、Firefox 上端を右クリックして、メニューバーを表示する。</li>
+<li>メニューバーの「表示」から「テキストエンコーディングの修復」を選択する。</li>
+</ul>
+
+<h3>Safari</h3>
+
+<p>メニューバーの「表示」から「テキストエンコーディング」→「日本語（Shift JIS)」を選択する。</p>
+
+
+</body></html>
