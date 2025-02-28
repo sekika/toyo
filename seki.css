@@ -191,6 +191,14 @@ table.noborder, td.noborder {
   border: 0;
 }
 
+img.one {
+  max-width: 80%;
+  width: min(80%, 650px);
+  height: auto;
+  margin:auto;
+  display: block
+}
+
 .responsive-image {
   max-width: 100%;
   height: auto;
