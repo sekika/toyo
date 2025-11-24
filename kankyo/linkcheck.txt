@@ -1,3 +1,2 @@
-2025/11/20 00:18:36 [NG] https://doi.org/10.1126/science.1156401 (status 403)
-2025/11/20 00:18:47 [NG] https://doi.org/10.1126/science.1176985 (status 403)
-2025/11/20 00:19:02 [NG] https://doi.org/10.1126/science.1246752 (status 403)
+2025/11/25 03:21:52 [NG] https://www.science.org/doi/10.1126/science.1156401 (status 403)
+2025/11/25 03:21:55 [NG] https://www.science.org/doi/10.1126/science.aae0061 (status 403)
